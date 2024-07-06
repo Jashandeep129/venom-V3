@@ -10,9 +10,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEM')
+bot = telebot.TeleBot('7215388523:AAEbjdkWYljElBmsuLXGna4CdfQu643on1Y')
 # Admin user IDs
-admin_id = {"5588464519"}
+admin_id = {"6575117171"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -22,7 +22,7 @@ KEY_FILE = "keys.json"
 # Cooldown settings
 COOLDOWN_TIME = 0  # in seconds
 CONSECUTIVE_ATTACKS_LIMIT = 2
-CONSECUTIVE_ATTACKS_COOLDOWN = 240  # in seconds
+CONSECUTIVE_ATTACKS_COOLDOWN = 20  # in seconds
 
 # In-memory storage
 users = {}
@@ -187,7 +187,7 @@ def handle_bgmi(message):
                 port = int(command[2])
                 time = int(command[3])
                 if time > 240:
-                    response = "⚠️𝐄𝐑𝐑𝐎𝐑:170 𝐒𝐄 𝐓𝐇𝐎𝐃𝐀 𝐊𝐀𝐌 𝐓𝐈𝐌𝐄 𝐃𝐀𝐀𝐋 𝐆𝐀𝐍𝐃𝐔."
+                    response = "⚠️𝐄𝐑𝐑𝐎𝐑:900 𝐒𝐄 𝐓𝐇𝐎𝐃𝐀 𝐊𝐀𝐌 𝐓𝐈𝐌𝐄 𝐃𝐀𝐀𝐋 𝐆𝐀𝐍𝐃𝐔."
                 else: 
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
@@ -302,7 +302,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''𝐐 𝐫𝐞 𝐂𝐇𝐀𝐏𝐑𝐈, {user_name}! 𝐓𝐡𝐢𝐬 𝐢𝐒 𝐘𝐎𝐔𝐑 𝐅𝐀𝐓𝐇𝐑𝐞𝐫𝐒 𝐁𝐨𝐓 𝐒𝐞𝐫𝐯𝐢𝐜𝐞.
+    response = f'''𝐐 𝐫𝐞 gandu, {user_name}! 𝐓𝐡𝐢𝐬 𝐢𝐒 𝐘𝐎𝐔𝐑 𝐅𝐀𝐓𝐇𝐑𝐞𝐫𝐒 𝐁𝐨𝐓 𝐒𝐞𝐫𝐯𝐢𝐜𝐞.
 🤖𝐀𝐍𝐏𝐀𝐃 𝐔𝐒𝐄 𝐇𝐄𝐋𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃: /help
 '''
     bot.reply_to(message, response)
@@ -324,7 +324,7 @@ def welcome_plan(message):
     response = f'''{user_name}, 𝐏𝐋𝐀𝐍 𝐃𝐄𝐊𝐇𝐄𝐆𝐀 𝐓𝐔 𝐆𝐀𝐑𝐄𝐄𝐁😂:
 
 VIP 🌟:
--> Attack time: 180 seconds
+-> Attack time: 900 seconds
 -> After attack limit: 5 minutes
 -> Concurrent attacks: 3
 
